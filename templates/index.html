@@ -249,13 +249,13 @@
                               </div>
                             
                             </div>
-                           
+                           {% if post.image %}
                             <div uk-lightbox>
                                 <a href="{{post.image.url}}">  
                                     <img src="{{post.image.url}}" alt="">
                                 </a>
                             </div>
-                            
+                            {% endif %}
     
                             <div class="py-3 px-4 space-y-3"> 
                                

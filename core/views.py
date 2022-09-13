@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib import messages
 from django.contrib.auth.models import User, auth
 from django.contrib.auth.decorators import login_required
-from . models import Follow, LikePost, Profile, Post
+from . models import *
 from itertools import chain
 import random
 from datetime import datetime
@@ -86,8 +86,13 @@ def index(request):
     
     suggestions_username_profile_list = FetchUserSuggestions(request, user_following)
     
-
-    return render(request, 'index.html',{'user_profile':user_profile, 'posts_profiles': zip(feed_list,all_post_profile), 'suggestions_username_profile_list': suggestions_username_profile_list[:4]  } )
+    context = {
+'user_profile':user_profile, 
+'posts_profiles': zip(feed_list,all_post_profile), 
+'suggestions_username_profile_list': suggestions_username_profile_list[:4]  
+}
+     
+    return render(request, 'index.html',context )
 
 
 @login_required(login_url = 'signin')
