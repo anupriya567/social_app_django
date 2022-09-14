@@ -273,5 +273,14 @@ def profile(request,pk):
     feed_list.sort(key = lambda x: x.created_at, reverse=True)
 ```    
 
+> error on changing 
+    user = Fk
+    all other fields to Fk
+
+    ERRORS:
+    core.Follow.follower: (fields.E304) Reverse accessor 'User.follow_set' for 'core.Follow.follower' clashes with reverse accessor for 'core.Follow.main_user'.
+            HINT: Add or change a related_name argument to the definition for 'core.Follow.follower' or 'core.Follow.main_user'.
+    core.Follow.main_user: (fields.E304) Reverse accessor 'User.follow_set' for 'core.Follow.main_user' clashes with reverse accessor for 'core.Follow.follower'.
+        HINT: Add or change a related_name argument to the definition for 'core.Follow.main_user' or 'core.Follow.follower'.
 
 
