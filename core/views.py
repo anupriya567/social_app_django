@@ -11,6 +11,7 @@ from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponse, HttpResponseRedirect
      
 
+
 def FetchProfilesForPosts(feed_list):
     all_post_username = []
     all_post_user_obj = []
