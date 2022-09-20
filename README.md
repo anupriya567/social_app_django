@@ -1,5 +1,6 @@
 # social_app
 [View demo video here](https://youtu.be/vVP9VODJMWs)</br>
+[Code](https://github.com/anupriya567/social_app_django/tree/master)</br>
 It is like a social book where you can-
 - create your account
 - upload your photos, delete your post
