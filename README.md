@@ -1,5 +1,14 @@
 # social_app
 
+It is like a social book where you can-
+- create your account
+- upload your photos, delete your post
+- follow your friends, unfollow them
+- view their profile, view their uploads
+- search for your friends
+- it also shows suggested users, any 5 users, each time you reload will 
+- show different random users from list
+
 ## 1). Display posts
 
 Firstly, we are displaying all posts from the Post Model
